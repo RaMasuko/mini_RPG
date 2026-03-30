@@ -1,9 +1,7 @@
 from item import Item
 class Potion(Item):
-    def __init__(self, name, height, price):
+    def __init__(self, name, height, price, cure):
         super().__init__(name, height, price)
-
-    def cure_points (self, cure):
         self.cure = cure
 
     def use(self):
